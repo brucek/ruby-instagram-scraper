@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.instagram.com/borodanov/?__a=1&max_id=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=86400
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 16 Jun 2016 01:27:31 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - csrftoken=704ff93b69a4442bda323b13cf7ca35c; expires=Thu, 15-Jun-2017 01:27:31
+        GMT; Max-Age=31449600; Path=/
+      - mid=V2IAgwAEAAEypf4p1R-BqOJgfMeX; expires=Wed, 11-Jun-2036 01:27:31 GMT; Max-Age=630720000;
+        Path=/
+      - s_network=; expires=Thu, 16-Jun-2016 02:27:31 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC8f7433acbd0909d75e20233365b97b6cfe51d2e01d858028171942cde4061abd%3AHOCd7oiWhwFpDu9Ay36roYkt5592KlDP%3A%7B%22asns%22%3A%7B%222605%3Ae000%3A1521%3A121%3Ae0f7%3Ae029%3Aba9c%3A63ed%22%3A20001%2C%22time%22%3A1466040451%7D%7D;
+        expires=Wed, 14-Sep-2016 01:27:31 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1666'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"user": {"username": "borodanov", "has_blocked_viewer": false, "follows":
+        {"count": 66}, "requested_by_viewer": false, "followed_by": {"count": 75},
+        "country_block": null, "has_requested_viewer": false, "external_url_linkshimmed":
+        "http://l.instagram.com/?e=ATO8w_ia0N_4dMVFHZYZ0NI8qKteiiRQRhyi_fjwf9vXF2n6P-9Ku33P\u0026u=http%3A%2F%2Fvk.com%2Fborodanov",
+        "follows_viewer": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/t51.2885-19/11906329_960233084022564_1448528159_a.jpg",
+        "is_private": false, "full_name": "sergey", "media": {"count": 139, "page_info":
+        {"has_previous_page": false, "start_cursor": "1273508744021128066", "end_cursor":
+        "1229541378442899940", "has_next_page": true}, "nodes": [{"code": "BGsaXSRu7OC",
+        "dimensions": {"width": 1080, "height": 1080}, "owner": {"id": "1531038819"},
+        "comments": {"count": 0}, "caption": "#\u043e\u0431\u0441\u043a\u043e\u0435",
+        "likes": {"count": 2}, "date": 1466034094, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13385833_142044362869684_927698417_n.jpg?ig_cache_key=MTI3MzUwODc0NDAyMTEyODA2Ng%3D%3D.2",
+        "is_video": false, "id": "1273508744021128066", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13385833_142044362869684_927698417_n.jpg?ig_cache_key=MTI3MzUwODc0NDAyMTEyODA2Ng%3D%3D.2"},
+        {"code": "BF-xwjmu7ID", "dimensions": {"width": 1080, "height": 1080}, "owner":
+        {"id": "1531038819"}, "comments": {"count": 0}, "caption": "and more #flowers",
+        "likes": {"count": 26}, "date": 1464502856, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13261082_514869408704271_425269031_n.jpg?ig_cache_key=MTI2MDY2Mzc4Njc1NTA0Mzg0Mw%3D%3D.2",
+        "is_video": false, "id": "1260663786755043843", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13261082_514869408704271_425269031_n.jpg?ig_cache_key=MTI2MDY2Mzc4Njc1NTA0Mzg0Mw%3D%3D.2"},
+        {"code": "BF-xi5MO7Ho", "dimensions": {"width": 1080, "height": 1080}, "owner":
+        {"id": "1531038819"}, "comments": {"count": 0}, "caption": "more #flowers",
+        "likes": {"count": 13}, "date": 1464502744, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13167180_1727135324191479_728622924_n.jpg?ig_cache_key=MTI2MDY2Mjg0Nzg2MDA5MzQxNg%3D%3D.2",
+        "is_video": false, "id": "1260662847860093416", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13167180_1727135324191479_728622924_n.jpg?ig_cache_key=MTI2MDY2Mjg0Nzg2MDA5MzQxNg%3D%3D.2"},
+        {"code": "BFv-gZGu7DM", "dimensions": {"width": 1080, "height": 1080}, "owner":
+        {"id": "1531038819"}, "comments": {"count": 0}, "caption": "#apple #blossom",
+        "likes": {"count": 23}, "date": 1464006222, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13249888_238004169913185_1492485495_n.jpg?ig_cache_key=MTI1NjQ5NzcyNTkyMzExMTExNg%3D%3D.2",
+        "is_video": false, "id": "1256497725923111116", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13249888_238004169913185_1492485495_n.jpg?ig_cache_key=MTI1NjQ5NzcyNTkyMzExMTExNg%3D%3D.2"},
+        {"code": "BFv-KhQO7Cj", "dimensions": {"width": 1080, "height": 1080}, "owner":
+        {"id": "1531038819"}, "comments": {"count": 1}, "caption": "#flower #ant",
+        "likes": {"count": 11}, "date": 1464006043, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13277655_641988949282861_1577500121_n.jpg?ig_cache_key=MTI1NjQ5NjIyMjg0Mzk0MTAyNw%3D%3D.2",
+        "is_video": false, "id": "1256496222843941027", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13277655_641988949282861_1577500121_n.jpg?ig_cache_key=MTI1NjQ5NjIyMjg0Mzk0MTAyNw%3D%3D.2"},
+        {"code": "BE6rH5cu7ED", "dimensions": {"width": 1080, "height": 1080}, "owner":
+        {"id": "1531038819"}, "comments": {"count": 0}, "caption": "#\u043c\u0430\u0440\u0430\u043b\u044c\u043d\u0438\u043a
+        #\u0410\u043b\u0442\u0430\u0439", "likes": {"count": 20}, "date": 1462217675,
+        "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13117801_1570094576622974_1727675735_n.jpg?ig_cache_key=MTI0MTQ5NDMwNjAxNTY1NDE0Nw%3D%3D.2",
+        "is_video": false, "id": "1241494306015654147", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13117801_1570094576622974_1727675735_n.jpg?ig_cache_key=MTI0MTQ5NDMwNjAxNTY1NDE0Nw%3D%3D.2"},
+        {"code": "BE6qn6eO7Cy", "dimensions": {"width": 1080, "height": 1080}, "comments":
+        {"count": 0}, "owner": {"id": "1531038819"}, "likes": {"count": 15}, "date":
+        1462217413, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13129294_996686460445629_993121708_n.jpg?ig_cache_key=MTI0MTQ5MjEwODA5MTMwNjE2Mg%3D%3D.2",
+        "is_video": false, "id": "1241492108091306162", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13129294_996686460445629_993121708_n.jpg?ig_cache_key=MTI0MTQ5MjEwODA5MTMwNjE2Mg%3D%3D.2"},
+        {"code": "BE6qg-2u7CY", "dimensions": {"width": 1080, "height": 1080}, "comments":
+        {"count": 0}, "owner": {"id": "1531038819"}, "likes": {"count": 11}, "date":
+        1462217357, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13116665_1092721834123799_692001122_n.jpg?ig_cache_key=MTI0MTQ5MTYzMTc2MDk3ODA3Mg%3D%3D.2",
+        "is_video": false, "id": "1241491631760978072", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13116665_1092721834123799_692001122_n.jpg?ig_cache_key=MTI0MTQ5MTYzMTc2MDk3ODA3Mg%3D%3D.2"},
+        {"code": "BE6qF5pu7BO", "dimensions": {"width": 1080, "height": 1080}, "comments":
+        {"count": 0}, "owner": {"id": "1531038819"}, "likes": {"count": 12}, "date":
+        1462217135, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13129934_1157593757626060_223376165_n.jpg?ig_cache_key=MTI0MTQ4OTc3MDc0ODI5MzE5OA%3D%3D.2",
+        "is_video": false, "id": "1241489770748293198", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13129934_1157593757626060_223376165_n.jpg?ig_cache_key=MTI0MTQ4OTc3MDc0ODI5MzE5OA%3D%3D.2"},
+        {"code": "BE6poXsO7AA", "dimensions": {"width": 1080, "height": 1080}, "comments":
+        {"count": 0}, "owner": {"id": "1531038819"}, "likes": {"count": 7}, "date":
+        1462216893, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13113813_269009313435026_697804912_n.jpg?ig_cache_key=MTI0MTQ4Nzc0MTQxODE4ODgwMA%3D%3D.2",
+        "is_video": false, "id": "1241487741418188800", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13113813_269009313435026_697804912_n.jpg?ig_cache_key=MTI0MTQ4Nzc0MTQxODE4ODgwMA%3D%3D.2"},
+        {"code": "BE6pI6Pu7Oe", "dimensions": {"width": 1080, "height": 1080}, "comments":
+        {"count": 0}, "owner": {"id": "1531038819"}, "likes": {"count": 16}, "date":
+        1462216635, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13102351_1740108572904007_312205653_n.jpg?ig_cache_key=MTI0MTQ4NTU3OTQ5Nzc0NzM1OA%3D%3D.2",
+        "is_video": false, "id": "1241485579497747358", "display_src": "https://scontent-lax3-1.cdninstagram.com/t51.2885-15/e35/13102351_1740108572904007_312205653_n.jpg?ig_cache_key=MTI0MTQ4NTU3OTQ5Nzc0NzM1OA%3D%3D.2"},
+        {"code": "BEQNV6Ku7Hk", "dimensions": {"width": 1080, "height": 1080}, "comments":
+        {"count": 0}, "owner": {"id": "1531038819"}, "likes": {"count": 12}, "date":
+        1460792775, "thumbnail_src": "https://scontent-lax3-1.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/12940870_830456280394144_1638935284_n.jpg?ig_cache_key=MTIyOTU0MTM3ODQ0Mjg5OTk0MA%3D%3D.2",
+        "is_video": false, "id": "1229541378442899940", "display_src": "https://scontent-lax3-1.cdninstagram.com/l/t51.2885-15/e35/12940870_830456280394144_1638935284_n.jpg?ig_cache_key=MTIyOTU0MTM3ODQ0Mjg5OTk0MA%3D%3D.2"}]},
+        "blocked_by_viewer": false, "followed_by_viewer": false, "is_verified": false,
+        "id": "1531038819", "biography": null, "external_url": "http://vk.com/borodanov"}}'
+    http_version: 
+  recorded_at: Thu, 16 Jun 2016 01:27:31 GMT
+recorded_with: VCR 3.0.3
