@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.instagram.com/query/?q=ig_shortcode(6zVfmqAMkD)%7Bcomments.last(2)%20%20%20%20%20%20%7Bcount,nodes%7Bid,created_at,text,user%7Bid,profile_pic_url,username,%20%20%20%20%20%20follows%7Bcount%7D,followed_by%7Bcount%7D,biography,full_name,media%7Bcount%7D,%20%20%20%20%20%20is_private,external_url,is_verified%7D%7D,page_info%7D%7D
+    uri: https://www.instagram.com/query/?q=ig_shortcode(6zVfmqAMkD)%7Bcomments.last(2)%7Bcount,nodes%7Bid,created_at,text,user%7Bid,profile_pic_url,username,follows%7Bcount%7D,followed_by%7Bcount%7D,biography,full_name,media%7Bcount%7D,is_private,external_url,is_verified%7D%7D,page_info%7D%7D
     body:
       encoding: US-ASCII
       string: ''
@@ -31,26 +31,26 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Wed, 12 Oct 2016 03:43:00 GMT
+      - Wed, 12 Oct 2016 04:00:12 GMT
       Content-Type:
       - application/json
       Set-Cookie:
-      - csrftoken=nI74aDdzBxHfNcr0jLG1M1TGvML2QL8M; expires=Wed, 11-Oct-2017 03:43:00
+      - csrftoken=IZLVBcOHSl5K7tCdgjZR9sgYlcznQ916; expires=Wed, 11-Oct-2017 04:00:12
         GMT; Max-Age=31449600; Path=/; secure
-      - mid=V_2xRAAEAAG3ztReWRBCMfuSUR3F; expires=Tue, 07-Oct-2036 03:43:00 GMT; Max-Age=630720000;
+      - mid=V_21TAAEAAEhJ8voGzP3aDRuKTtn; expires=Tue, 07-Oct-2036 04:00:12 GMT; Max-Age=630720000;
         Path=/
-      - s_network=; expires=Wed, 12-Oct-2016 04:43:00 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSC4521aa01af316869090090fd822c0be5fac6613682758a95d565de69049d3518%3Aea3nWZR6ycZysfnemgjrTC1AfFvOpPNu%3A%7B%22asns%22%3A%7B%222605%3Ae000%3A1521%3A192%3Afc35%3A85a5%3A7061%3Abd4%22%3A20001%2C%22time%22%3A1476243780%7D%7D;
-        expires=Tue, 10-Jan-2017 03:43:00 GMT; httponly; Max-Age=7776000; Path=/;
+      - s_network=; expires=Wed, 12-Oct-2016 05:00:12 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCeb4e87fb780217c38dfd6e48c07f8080881d877a2c7f225ec16fa951702ffed9%3A2AFMrgKtKoNKwz4NYlsrcJsfyQiyVo7g%3A%7B%22asns%22%3A%7B%222605%3Ae000%3A1521%3A192%3Afc35%3A85a5%3A7061%3Abd4%22%3A20001%2C%22time%22%3A1476244812%7D%7D;
+        expires=Tue, 10-Jan-2017 04:00:12 GMT; httponly; Max-Age=7776000; Path=/;
         secure
       Connection:
       - keep-alive
       Content-Length:
-      - '824'
+      - '828'
     body:
       encoding: ASCII-8BIT
       string: '{"status": "ok", "comments": {"count": 58, "page_info": {"has_previous_page":
-        true, "start_cursor": "AQBrqJIg10DfQEvBP2rSb11tS09t2lrCcjkA7iodKIKcQAYh2j-u1NpsPD-qJycsTPYdm0BAcZkVwCKTDM9D8xjD9uEy6AqDrDFhIaDZGvens2BVX_DfEgPFDl-izaxIq3I",
+        true, "start_cursor": "AQB49iOlDNbmBhV4HY2gZywq3PrqSFMxeNBIv2kTeUeV2BEuvEPGqS7Q65hnTpyMO1jKPb_4FuC-FPnudZtMIuOjIVaEdAXQnTnKuNx3jzK4IUSckQcIi4zJ_AeONUZvf3I",
         "end_cursor": null, "has_next_page": false}, "nodes": [{"text": "I was wondering
         when it was going to happen!! About time!! Congrats @kate !!", "created_at":
         1440635020.0, "id": "17851968544000050", "user": {"username": "govickygo",
@@ -67,5 +67,5 @@ http_interactions:
         "biography": null, "full_name": "lorenaboria", "media": {"count": 493}, "is_verified":
         false, "id": "27957454", "is_private": true, "external_url": null}}]}}'
     http_version: 
-  recorded_at: Wed, 12 Oct 2016 03:43:00 GMT
+  recorded_at: Wed, 12 Oct 2016 04:00:12 GMT
 recorded_with: VCR 3.0.3

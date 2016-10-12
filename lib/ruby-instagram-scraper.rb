@@ -43,11 +43,11 @@ module RubyInstagramScraper
   end
 
   def self.get_media_comments ( shortcode, count = 40, before = nil )
-    params = before.nil?? "comments.last(#{ count })" : "comments.before( #{ before } , #{count})"
+    params = before.nil?? "comments.last(#{ count })" : "comments.before(#{ before },#{count})"
     url = "#{BASE_URL}/query/?q=ig_shortcode(#{ shortcode }){#{ params }\
-      {count,nodes{id,created_at,text,user{id,profile_pic_url,username,\
-      follows{count},followed_by{count},biography,full_name,media{count},\
-      is_private,external_url,is_verified}},page_info}}"
+{count,nodes{id,created_at,text,user{id,profile_pic_url,username,\
+follows{count},followed_by{count},biography,full_name,media{count},\
+is_private,external_url,is_verified}},page_info}}"
 
     JSON.parse( open( url ).read )["comments"]
   end
