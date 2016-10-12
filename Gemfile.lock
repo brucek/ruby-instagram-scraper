@@ -5,7 +5,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     hashdiff (0.3.0)
-    minitest (5.9.0)
+    minitest (5.9.1)
     safe_yaml (1.0.4)
     vcr (3.0.3)
     webmock (2.1.0)
