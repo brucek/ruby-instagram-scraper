@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.instagram.com/query/?q=ig_shortcode(6zVfmqAMkD)%7Bcomments.last(2)%20%20%20%20%20%20%7Bcount,nodes%7Bid,created_at,text,user%7Bid,profile_pic_url,username,%20%20%20%20%20%20follows%7Bcount%7D,followed_by%7Bcount%7D,biography,full_name,media%7Bcount%7D,%20%20%20%20%20%20is_private,external_url,is_verified%7D%7D,page_info%7D%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=86400
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Wed, 12 Oct 2016 03:43:00 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - csrftoken=nI74aDdzBxHfNcr0jLG1M1TGvML2QL8M; expires=Wed, 11-Oct-2017 03:43:00
+        GMT; Max-Age=31449600; Path=/; secure
+      - mid=V_2xRAAEAAG3ztReWRBCMfuSUR3F; expires=Tue, 07-Oct-2036 03:43:00 GMT; Max-Age=630720000;
+        Path=/
+      - s_network=; expires=Wed, 12-Oct-2016 04:43:00 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC4521aa01af316869090090fd822c0be5fac6613682758a95d565de69049d3518%3Aea3nWZR6ycZysfnemgjrTC1AfFvOpPNu%3A%7B%22asns%22%3A%7B%222605%3Ae000%3A1521%3A192%3Afc35%3A85a5%3A7061%3Abd4%22%3A20001%2C%22time%22%3A1476243780%7D%7D;
+        expires=Tue, 10-Jan-2017 03:43:00 GMT; httponly; Max-Age=7776000; Path=/;
+        secure
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '824'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "ok", "comments": {"count": 58, "page_info": {"has_previous_page":
+        true, "start_cursor": "AQBrqJIg10DfQEvBP2rSb11tS09t2lrCcjkA7iodKIKcQAYh2j-u1NpsPD-qJycsTPYdm0BAcZkVwCKTDM9D8xjD9uEy6AqDrDFhIaDZGvens2BVX_DfEgPFDl-izaxIq3I",
+        "end_cursor": null, "has_next_page": false}, "nodes": [{"text": "I was wondering
+        when it was going to happen!! About time!! Congrats @kate !!", "created_at":
+        1440635020.0, "id": "17851968544000050", "user": {"username": "govickygo",
+        "follows": {"count": 209}, "followed_by": {"count": 286}, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/t51.2885-19/s150x150/11899579_445264158978920_1539710317_a.jpg",
+        "biography": "True Aries \u2648\ufe0f | Type A \ud83d\udcdd | Master of GSD
+        \ud83d\udc81\ud83c\udffb| Fitness \u0026 Health Enthusiast \ud83c\udfcb\ud83c\udffe\ud83c\udf4e|
+        \ud83d\udc81\ud83c\udffb\u200d\u2642\ufe0f:@heybondo and \ud83d\udc76\ud83c\udffb:@greysonphilip",
+        "full_name": "Victoria (Go) Bond", "media": {"count": 1054}, "is_verified":
+        false, "id": "25089680", "is_private": true, "external_url": null}}, {"text":
+        "@kate omg in positano! #hediditright so perfect auguri!", "created_at": 1441849140.0,
+        "id": "17851999804000050", "user": {"username": "lorenaboria", "follows":
+        {"count": 356}, "followed_by": {"count": 580}, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/t51.2885-19/10326580_1434892050118593_1593998871_a.jpg",
+        "biography": null, "full_name": "lorenaboria", "media": {"count": 493}, "is_verified":
+        false, "id": "27957454", "is_private": true, "external_url": null}}]}}'
+    http_version: 
+  recorded_at: Wed, 12 Oct 2016 03:43:00 GMT
+recorded_with: VCR 3.0.3

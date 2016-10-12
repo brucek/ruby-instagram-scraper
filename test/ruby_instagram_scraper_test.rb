@@ -69,4 +69,25 @@ describe RubyInstagramScraper do
     end
   end
 
+  describe "when request user media comments" do
+    before do
+      @code = "6zVfmqAMkD"
+    end
+
+    it "must be an array" do
+      VCR.use_cassette(@code) do
+        RubyInstagramScraper.get_media_comments(@code, 2)['nodes'].must_be_instance_of Array
+      end
+    end
+
+    describe "when request user media comments before specified comment_id value" do
+      it "must be an array" do
+        before = "17851999804000050"
+        VCR.use_cassette("#{@code}_#{before}") do
+          RubyInstagramScraper.get_media_comments(@code, 2, before)['nodes'].must_be_instance_of Array
+        end
+      end
+    end
+  end
+
 end
