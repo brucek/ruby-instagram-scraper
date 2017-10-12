@@ -3,6 +3,11 @@ require File.expand_path '../test_helper.rb', __FILE__
 
 describe RubyInstagramScraper do
 
+  before do
+    @proxy_ip_addr = "35.198.211.62"
+    @proxy_port = "3128"
+  end
+
   describe "calls with a user" do
 
     before do
@@ -13,6 +18,15 @@ describe RubyInstagramScraper do
       it "feed.user must be an array" do
         VCR.use_cassette(@username) do
           res = RubyInstagramScraper.get_feed(@username)
+          res["user"]["username"].must_equal @username
+          res["user"]["media"]["nodes"].must_be_instance_of Array
+        end
+      end
+
+      it "also works via proxy" do
+        VCR.use_cassette("#{@username}_proxy") do
+          proxy = RubyInstagramScraper.make_proxy("http://#{@proxy_ip_addr}:#{@proxy_port}")
+          res = RubyInstagramScraper.get_feed(@username,nil, proxy)
           res["user"]["username"].must_equal @username
           res["user"]["media"]["nodes"].must_be_instance_of Array
         end
@@ -88,15 +102,14 @@ describe RubyInstagramScraper do
     #     end
     #   end
     # end
+
   end
 
   describe '#open_with_proxy' do
     it 'uses a basic proxy correctly' do
-      ip_addr = "23.94.188.67"
-      port = "1080"
-      VCR.use_cassette(ip_addr) do
-        proxy = RubyInstagramScraper.make_proxy("http://#{ip_addr}:#{port}")
-        RubyInstagramScraper.open_with_proxy("http://ipv4.icanhazip.com/", proxy).read.chop.must_equal ip_addr
+      VCR.use_cassette(@proxy_ip_addr) do
+        proxy = RubyInstagramScraper.make_proxy("http://#{@proxy_ip_addr}:#{@proxy_port}")
+        RubyInstagramScraper.open_with_proxy("http://ipv4.icanhazip.com/", proxy).read.chop.must_equal @proxy_ip_addr
       end
     end
 
