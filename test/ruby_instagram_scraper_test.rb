@@ -90,4 +90,27 @@ describe RubyInstagramScraper do
     # end
   end
 
+  describe '#open_with_proxy' do
+    it 'uses a basic proxy correctly' do
+      ip_addr = "23.94.188.67"
+      port = "1080"
+      VCR.use_cassette(ip_addr) do
+        proxy = RubyInstagramScraper.make_proxy("http://#{ip_addr}:#{port}")
+        RubyInstagramScraper.open_with_proxy("http://ipv4.icanhazip.com/", proxy).read.chop.must_equal ip_addr
+      end
+    end
+
+    it 'uses an auth proxy correctly' do
+      skip "You need to have a private proxy set up here"
+      ip_addr = "1.1.1.1"
+      port = "80"
+      user = "user"
+      password = "password"
+      VCR.use_cassette(ip_addr) do
+        proxy = RubyInstagramScraper.make_proxy("http://#{ip_addr}:#{port}", user, password)
+        RubyInstagramScraper.open_with_proxy("http://ipv4.icanhazip.com/", proxy).read.chop.must_equal ip_addr
+      end
+    end
+  end
+
 end
