@@ -48,4 +48,43 @@ http_interactions:
       string: '{"status": "fail", "message": "invalid query"}'
     http_version: 
   recorded_at: Wed, 12 Oct 2016 03:39:21 GMT
+- request:
+    method: get
+    uri: http://ipv4.icanhazip.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 Oct 2017 03:35:11 GMT
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '14'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+    body:
+      encoding: UTF-8
+      string: '76.175.75.157
+
+'
+    http_version: 
+  recorded_at: Thu, 12 Oct 2017 03:35:11 GMT
 recorded_with: VCR 3.0.3
