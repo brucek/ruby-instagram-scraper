@@ -18,8 +18,8 @@ describe RubyInstagramScraper do
       it "feed.user must be an array" do
         VCR.use_cassette(@username) do
           res = RubyInstagramScraper.get_feed(@username)
-          res["user"]["username"].must_equal @username
-          res["user"]["edge_owner_to_timeline_media"]["edges"].must_be_instance_of Array
+          res["graphql"]["user"]["username"].must_equal @username
+          res["graphql"]["user"]["edge_owner_to_timeline_media"]["edges"].must_be_instance_of Array
         end
       end
 
@@ -27,8 +27,8 @@ describe RubyInstagramScraper do
         VCR.use_cassette("#{@username}_proxy") do
           proxy = RubyInstagramScraper.make_proxy("http://#{@proxy_ip_addr}:#{@proxy_port}")
           res = RubyInstagramScraper.get_feed(@username, proxy)
-          res["user"]["username"].must_equal @username
-          res["user"]["edge_owner_to_timeline_media"]["edges"].must_be_instance_of Array
+          res["graphql"]["user"]["username"].must_equal @username
+          res["graphql"]["user"]["edge_owner_to_timeline_media"]["edges"].must_be_instance_of Array
         end
       end
     end

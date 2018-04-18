@@ -20,7 +20,7 @@ module RubyInstagramScraper
 
   def self.get_feed (username, proxy = nil)
     url = "#{BASE_URL}/#{ username }/"
-    JSON.parse(DATA_REGEX.match(open_with_proxy(url, proxy).read)[1])["entry_data"]["ProfilePage"][0]["graphql"]
+    JSON.parse(DATA_REGEX.match(open_with_proxy(url, proxy).read)[1])["entry_data"]["ProfilePage"][0]
   end
 
   def self.get_user_media_nodes (username, proxy = nil)
@@ -28,7 +28,7 @@ module RubyInstagramScraper
   end
 
   def self.get_user (username, proxy = nil)
-    self.get_feed(username, proxy)["user"]
+    self.get_feed(username, proxy)["graphql"]["user"]
   end
 
   def self.get_query_id (username, proxy = nil)
