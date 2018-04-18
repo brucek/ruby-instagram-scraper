@@ -11,6 +11,6 @@ VCR.configure do |c|
   c.cassette_library_dir = 'test/fixtures/cassettes'
   c.hook_into :webmock
   c.default_cassette_options = {
-    re_record_interval: 3600 * 24  # 3600 seconds = 1 hour
+    re_record_interval: 3600 * 24 # 3600 seconds = 1 hour
   }
 end

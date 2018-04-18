@@ -4,7 +4,7 @@ require File.expand_path '../test_helper.rb', __FILE__
 describe RubyInstagramScraper do
 
   before do
-    @proxy_ip_addr = "35.198.211.62"
+    @proxy_ip_addr = "159.65.110.167"
     @proxy_port = "3128"
   end
 
@@ -19,16 +19,16 @@ describe RubyInstagramScraper do
         VCR.use_cassette(@username) do
           res = RubyInstagramScraper.get_feed(@username)
           res["user"]["username"].must_equal @username
-          res["user"]["media"]["nodes"].must_be_instance_of Array
+          res["user"]["edge_owner_to_timeline_media"]["edges"].must_be_instance_of Array
         end
       end
 
       it "also works via proxy" do
         VCR.use_cassette("#{@username}_proxy") do
           proxy = RubyInstagramScraper.make_proxy("http://#{@proxy_ip_addr}:#{@proxy_port}")
-          res = RubyInstagramScraper.get_feed(@username,nil, proxy)
+          res = RubyInstagramScraper.get_feed(@username, proxy)
           res["user"]["username"].must_equal @username
-          res["user"]["media"]["nodes"].must_be_instance_of Array
+          res["user"]["edge_owner_to_timeline_media"]["edges"].must_be_instance_of Array
         end
       end
     end
@@ -42,9 +42,9 @@ describe RubyInstagramScraper do
     end
 
     describe "#get_user" do
-      it "must be an array" do
+      it "must have the correct username" do
         VCR.use_cassette(@username) do
-          RubyInstagramScraper.get_user_media_nodes(@username).must_be_instance_of Array
+          RubyInstagramScraper.get_user(@username)["username"].must_equal @username
         end
       end
     end
@@ -53,6 +53,14 @@ describe RubyInstagramScraper do
       it "must be an array" do
         VCR.use_cassette(@username) do
           RubyInstagramScraper.get_user_media_nodes(@username).must_be_instance_of Array
+        end
+      end
+    end
+
+    describe 'when request query id' do
+      it "must return the correct id" do
+        VCR.use_cassette("#{@username}_queryid") do
+          RubyInstagramScraper.get_query_id(@username).must_equal "42323d64886122307be10013ad2dcc44"
         end
       end
     end
