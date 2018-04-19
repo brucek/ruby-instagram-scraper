@@ -11,7 +11,7 @@ describe RubyInstagramScraper do
   describe "calls with a user" do
 
     before do
-      @username = "borodanov"
+      @username = "gisele"
     end
 
     describe "#get_feed" do

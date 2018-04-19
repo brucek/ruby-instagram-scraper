@@ -325,4 +325,224 @@ http_interactions:
         false, "status": "ok"}'
     http_version: 
   recorded_at: Wed, 18 Apr 2018 00:52:47 GMT
+- request:
+    method: get
+    uri: https://www.instagram.com/web/search/topsearch/?query=gisele
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Language:
+      - en
+      Date:
+      - Thu, 19 Apr 2018 01:40:12 GMT
+      Strict-Transport-Security:
+      - max-age=86400
+      Set-Cookie:
+      - csrftoken=an4zNHRFKjSz5xENCsEMoB3MgSnB0VGR; expires=Thu, 18-Apr-2019 01:40:12
+        GMT; Max-Age=31449600; Path=/; Secure
+      - mid=WtfzfAAEAAElcjAnYTG6mBGhnW65; expires=Wed, 14-Apr-2038 01:40:12 GMT; Max-Age=630720000;
+        Path=/
+      - rur=FRC; Path=/
+      - 'urlgen="{\"time\": 1524102012\054 \"2605:e000:1521:192:88fb:c710:7e3c:51ee\":
+        20001}:1f8yYW:QLip1frNL34bAD9awFKPI1wW2yA"; Path=/'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3803'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"users": [{"position": 0, "user": {"pk": "332936971", "username":
+        "gisele", "full_name": "Gisele B\u00fcndchen", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/ada46bfdb3ee83d28425b1cd53c887a1/5B625F13/t51.2885-19/s150x150/1515288_1662447867362498_1023391680_a.jpg",
+        "is_verified": true, "has_anonymous_profile_picture": false, "follower_count":
+        14320552, "byline": "14.3m followers", "mutual_followers_count": 0.0, "unseen_count":
+        0}}, {"position": 1, "user": {"pk": "689229546", "username": "oficialxogisele",
+        "full_name": "Gisele", "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/128b8a94769009249d964193e2c03640/5B62C87F/t51.2885-19/11008078_1559258894343675_1941161516_a.jpg",
+        "is_verified": false, "has_anonymous_profile_picture": false, "follower_count":
+        113068, "byline": "113k followers", "mutual_followers_count": 0.0, "unseen_count":
+        0}}, {"position": 3, "user": {"pk": "40778587", "username": "gisele.tattoo",
+        "full_name": "Gisele", "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/447a66392c1393b69760a9cc6b425730/5B684BE3/t51.2885-19/s150x150/28763181_2089934457908683_3775791434511155200_n.jpg",
+        "profile_pic_id": "1734267619655874487_40778587", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 10212, "byline": "10.2k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 4, "user": {"pk": "1988215913", "username":
+        "gisele.bundchen", "full_name": "G I S E L E  B \u00dc N D C H E N\u00ae",
+        "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/1cec7dd554986d9a1ec29e2cfdac8e93/5B74C54A/t51.2885-19/s150x150/29716165_1985137841815195_8460967487289163776_n.jpg",
+        "profile_pic_id": "1753780780858892271_1988215913", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 106529, "byline":
+        "106k followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        5, "user": {"pk": "349372961", "username": "giseledaily", "full_name": "Gisele
+        B\u00fcndchen Daily \u2b50\ufe0f", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/ef4ec09e9b06a8eca1f12f09829df9fe/5B6070AB/t51.2885-19/s150x150/18161979_1560896743952884_8153092570675675136_a.jpg",
+        "profile_pic_id": "1506064045450817317_349372961", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 8067, "byline": "8067 followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 8, "user": {"pk": "375062058", "username":
+        "gisele.mdq", "full_name": "gisele rodriguez", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/920e68fba892083595785176d05b64b1/5B500291/t51.2885-19/s150x150/20479276_331954880583789_1572006683725529088_a.jpg",
+        "profile_pic_id": "1570757072345897120_375062058", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 12440, "byline": "12.4k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 9, "user": {"pk": "20746562", "username":
+        "giselepaiva", "full_name": "Gisele Paiva", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/ee3e5953990bec1f969b220d289c86d1/5B571DCB/t51.2885-19/s150x150/16110120_1758025614524052_4250093439036686336_n.jpg",
+        "profile_pic_id": "1429347214031031590_20746562", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 10303, "byline": "10.3k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 10, "user": {"pk": "198744463", "username":
+        "giselenasciment", "full_name": "Gisele Nascimento", "is_private": false,
+        "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/21f0b11e3662ca1083d7df728a0941b6/5B5B2177/t51.2885-19/s150x150/29417339_156954618331963_5836429868828459008_n.jpg",
+        "profile_pic_id": "1749049666212026411_198744463", "is_verified": true, "has_anonymous_profile_picture":
+        false, "follower_count": 451891, "byline": "451k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 11, "user": {"pk": "2031300077", "username":
+        "gisele.magazine", "full_name": "GISELe\u7de8\u96c6\u90e8", "is_private":
+        false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/523178802282436ae2aae44ed11fa1c8/5B64D566/t51.2885-19/s150x150/29090105_153456142018433_1522925150381539328_n.jpg",
+        "profile_pic_id": "1744508395460642286_2031300077", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 44384, "byline":
+        "44.3k followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        12, "user": {"pk": "210394205", "username": "giselefrade", "full_name": "Gisele
+        Frade", "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/7cc91011773e7811a29e32cbbc2e20be/5B5FBC84/t51.2885-19/s150x150/26158990_1998705650351327_6895194965773647872_n.jpg",
+        "profile_pic_id": "1690155477962230286_210394205", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 87492, "byline": "87.4k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 13, "user": {"pk": "1979083846", "username":
+        "xogisele17", "full_name": "Xo Gisele", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/7372f1344f3bb66614949a92c9fbaa0d/5B710745/t51.2885-19/s150x150/19955808_1563001473772127_3072883512118870016_a.jpg",
+        "profile_pic_id": "1557423784435238138_1979083846", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 28042, "byline":
+        "28k followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        14, "user": {"pk": "6732658769", "username": "giseleschmidtofficial", "full_name":
+        "Gary Oldman \u0026 Gisele Schmidt", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/ecc9f8fe706db6b7b247807e70629587/5B66BE46/t51.2885-19/s150x150/25013194_1898518190464942_6134651305278308352_n.jpg",
+        "profile_pic_id": "1669269994830300550_6732658769", "is_verified": true, "has_anonymous_profile_picture":
+        false, "follower_count": 8924, "byline": "8924 followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 25, "user": {"pk": "205274129", "username":
+        "giseletorre", "full_name": "Gis\u00e8le Torre Orme\u00f1o", "is_private":
+        false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/fa5274161de449117f32246300688854/5B4F5477/t51.2885-19/s150x150/29090681_2065516437017389_3350037919233474560_n.jpg",
+        "profile_pic_id": "1744483305847129246_205274129", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 5251, "byline": "5251 followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 26, "user": {"pk": "13275820", "username":
+        "giselecoria", "full_name": "Gisele", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/5e0216d479910efd97a54d2ea4f299db/5B6D837A/t51.2885-19/10729249_965859560109047_528617057_a.jpg",
+        "is_verified": false, "has_anonymous_profile_picture": false, "follower_count":
+        27096, "byline": "27k followers", "mutual_followers_count": 0.0, "unseen_count":
+        0}}, {"position": 27, "user": {"pk": "3236017243", "username": "giselejfox",
+        "full_name": "Gisele Fox", "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/01b3dbe05a414bff727cb1c990144e40/5B74A94A/t51.2885-19/s150x150/28763244_179596312835721_2122415117894156288_n.jpg",
+        "profile_pic_id": "1740330282295055770_3236017243", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 7112, "byline":
+        "7112 followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        28, "user": {"pk": "2246180726", "username": "gisele_nb1", "full_name": ".Tumukunde
+        Gisele", "is_private": true, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/4ebbcabd087cb9aeae35376c673bce45/5B6F2A39/t51.2885-19/s150x150/29718132_582634268739518_4543641246693851136_n.jpg",
+        "profile_pic_id": "1745671846030554471_2246180726", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 56448, "byline":
+        "56.4k followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        29, "user": {"pk": "6352403", "username": "gichevalier", "full_name": "Gisele
+        Chevalier", "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/fe18ee1a2641c5a47a09888e0fd0e708/5B6ECF0D/t51.2885-19/s150x150/27575003_411220552639412_307352403777159168_n.jpg",
+        "profile_pic_id": "1714717298487753094_6352403", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 116524, "byline": "116k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 30, "user": {"pk": "557583548", "username":
+        "giselebundchenfan", "full_name": "Gisele B\u00fcndchen Fan", "is_private":
+        false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/cb2c969480064bfb4c9b438aeb95f95f/5B6A69F7/t51.2885-19/s150x150/20066512_387884324941985_1468116737709834240_a.jpg",
+        "profile_pic_id": "1561142388972602230_557583548", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 50919, "byline": "50.9k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 31, "user": {"pk": "2988428754", "username":
+        "giselebundchenvideos", "full_name": "Gisele B\u00fcndchen Videos \u0026 More",
+        "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/f2073e1193deda69a5ae9d81aa7885d8/5B757EA0/t51.2885-19/s150x150/29400921_200832440505788_8792832407590928384_n.jpg",
+        "profile_pic_id": "1742530825666490622_2988428754", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 96218, "byline":
+        "96.2k followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        32, "user": {"pk": "354343864", "username": "gise111e", "full_name": "Gisele",
+        "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/ad5165804e05b5aaf7655bfb449ef04b/5B554609/t51.2885-19/s150x150/29718016_1952999748045867_7536926391908958208_n.jpg",
+        "profile_pic_id": "1753794556616121063_354343864", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 1325, "byline": "1325 followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 33, "user": {"pk": "11691316", "username":
+        "giselewyne", "full_name": "Gis\u00e8le Wyne", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/be8f18796aafdb7899951d712f3f997c/5B668612/t51.2885-19/s150x150/16908674_1030333917099740_5936608799891652608_a.jpg",
+        "profile_pic_id": "1459785724441229483_11691316", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 30158, "byline": "30.1k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 34, "user": {"pk": "204116342", "username":
+        "giselebethea", "full_name": "Gisele Bethea\ud83d\udc90", "is_private": false,
+        "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/51d464ddd076432113da2633b38b6a7c/5B73A201/t51.2885-19/s150x150/13739622_1256358691049220_1075176994_a.jpg",
+        "profile_pic_id": "1310534300924302044_204116342", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 93954, "byline": "93.9k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 35, "user": {"pk": "30316801", "username":
+        "gisele_dias", "full_name": "Gisele Dias Moda e Estilo", "is_private": false,
+        "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/cad3d35362cf7d5055ee5b64ec1709d6/5B5C1CD2/t51.2885-19/s150x150/28752976_976696072486806_6447797091656794112_n.jpg",
+        "profile_pic_id": "1736013979791960405_30316801", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 16599, "byline": "16.5k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 36, "user": {"pk": "2863970474", "username":
+        "gisele.___", "full_name": "Selena\ud83c\udf0a", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/30b8c0baa2980e22efe8238f91ccef0b/5B562A9A/t51.2885-19/s150x150/25016765_1597200196989644_8949788517089673216_n.jpg",
+        "profile_pic_id": "1673378558581433119_2863970474", "is_verified": false,
+        "has_anonymous_profile_picture": false, "follower_count": 308, "byline": "308
+        followers", "mutual_followers_count": 0.0, "unseen_count": 0}}, {"position":
+        37, "user": {"pk": "1163470", "username": "gigigisele", "full_name": "GIS\u00c8LE.",
+        "is_private": false, "profile_pic_url": "https://scontent-lax3-1.cdninstagram.com/vp/af064bbce761a6ce35750f4b1c0d84ba/5B5338F9/t51.2885-19/s150x150/23594948_131274844164826_3623216883144065024_n.jpg",
+        "profile_pic_id": "1648034247392641478_1163470", "is_verified": false, "has_anonymous_profile_picture":
+        false, "follower_count": 46231, "byline": "46.2k followers", "mutual_followers_count":
+        0.0, "unseen_count": 0}}, {"position": 38, "user": {"pk": "1253025577", "username":
+        "giselledresses", "full_name": "Giselle Dresses", "is_private": false, "profile_pic_url":
+        "https://scontent-lax3-1.cdninstagram.com/vp/020f5f88d44b57ab7c3d190a730cbc0a/5B6B8D7C/t51.2885-19/10948919_1604638329750231_524679669_a.jpg",
+        "is_verified": false, "has_anonymous_profile_picture": false, "follower_count":
+        27849, "byline": "27.8k followers", "mutual_followers_count": 0.0, "unseen_count":
+        0}}], "places": [], "hashtags": [{"position": 2, "hashtag": {"name": "gisele",
+        "id": 17843794582021553, "media_count": 165814}}, {"position": 6, "hashtag":
+        {"name": "giselebundchen", "id": 17843731027042954, "media_count": 194610}},
+        {"position": 7, "hashtag": {"name": "giseleb\u00fcndchen", "id": 17841563359111229,
+        "media_count": 32973}}, {"position": 15, "hashtag": {"name": "giseleofficial",
+        "id": 17842233820064520, "media_count": 3707}}, {"position": 16, "hashtag":
+        {"name": "giselenascimento", "id": 17841553570078295, "media_count": 3622}},
+        {"position": 17, "hashtag": {"name": "giselebrand\u00e3osemij\u00f3ias", "id":
+        17843820748016186, "media_count": 472}}, {"position": 18, "hashtag": {"name":
+        "giselebunchen", "id": 17843876392049753, "media_count": 3983}}, {"position":
+        19, "hashtag": {"name": "giseleyashar", "id": 17841518509110772, "media_count":
+        3103}}, {"position": 20, "hashtag": {"name": "gis\u00e8le", "id": 17841536569122509,
+        "media_count": 2087}}, {"position": 21, "hashtag": {"name": "gisele20anos",
+        "id": 17843572339003393, "media_count": 3591}}, {"position": 22, "hashtag":
+        {"name": "giselerocks", "id": 17841515014081061, "media_count": 2763}}, {"position":
+        23, "hashtag": {"name": "giselecamargo", "id": 17843659231001356, "media_count":
+        2343}}, {"position": 24, "hashtag": {"name": "giselefap", "id": 17843741362011686,
+        "media_count": 2330}}, {"position": 39, "hashtag": {"name": "giselerampazzolifestyleportrait",
+        "id": 17841503554107737, "media_count": 431}}, {"position": 40, "hashtag":
+        {"name": "giselesantana", "id": 17841549040073085, "media_count": 2210}},
+        {"position": 41, "hashtag": {"name": "giseleoliveirabelezaestetica", "id":
+        17842404190132677, "media_count": 809}}, {"position": 42, "hashtag": {"name":
+        "giselecostapersonalorganizer", "id": 17845964458041590, "media_count": 737}},
+        {"position": 43, "hashtag": {"name": "giselegrenzahairstudio", "id": 17842140121068666,
+        "media_count": 1885}}, {"position": 44, "hashtag": {"name": "giselecostapersonalhome",
+        "id": 17843589538068560, "media_count": 1364}}, {"position": 45, "hashtag":
+        {"name": "giselesouza", "id": 17841515686109605, "media_count": 1609}}, {"position":
+        46, "hashtag": {"name": "giselefreitassemijoias", "id": 17841549946075890,
+        "media_count": 1419}}, {"position": 47, "hashtag": {"name": "giseledelorme",
+        "id": 17841561772090968, "media_count": 1439}}, {"position": 48, "hashtag":
+        {"name": "giselebundchenintimates", "id": 17841537208102489, "media_count":
+        1331}}, {"position": 49, "hashtag": {"name": "giselecastelanostore", "id":
+        17843069884014426, "media_count": 403}}, {"position": 50, "hashtag": {"name":
+        "giselepaivamakeup", "id": 17843739994004805, "media_count": 1512}}, {"position":
+        51, "hashtag": {"name": "giselezuppo", "id": 17843903866053693, "media_count":
+        1398}}, {"position": 52, "hashtag": {"name": "giselerampazzofotografia", "id":
+        17841560710108972, "media_count": 535}}, {"position": 53, "hashtag": {"name":
+        "giselepersonalorganizer", "id": 17843751421117031, "media_count": 479}},
+        {"position": 54, "hashtag": {"name": "giseleverzelettiphoto", "id": 17850151483073596,
+        "media_count": 492}}], "has_more": true, "rank_token": "2785df85-98e1-4833-a4dd-85dd095a6ac2",
+        "clear_client_cache": false, "status": "ok"}'
+    http_version: 
+  recorded_at: Thu, 19 Apr 2018 01:40:12 GMT
 recorded_with: VCR 4.0.0
