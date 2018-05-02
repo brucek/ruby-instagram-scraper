@@ -13,4 +13,7 @@ VCR.configure do |c|
   c.default_cassette_options = {
     re_record_interval: 3600 * 24 # 3600 seconds = 1 hour
   }
+  c.before_record do |i|
+    i.response.body.force_encoding('UTF-8')
+  end
 end

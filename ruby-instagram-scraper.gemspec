@@ -2,7 +2,7 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'ruby-instagram-scraper'
-  s.version = '0.2.3'
+  s.version = '0.2.4'
   s.date = '2018-05-01'
   s.summary = "A simple module for requests to Instagram without an API key."
   s.description = "A simple module for requests to Instagram without an API key."

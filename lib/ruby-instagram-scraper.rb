@@ -4,7 +4,7 @@ require 'json'
 module RubyInstagramScraper
 
   BASE_URL = "https://www.instagram.com"
-  DATA_REGEX = /window._sharedData=({.*});\s+window/
+  DATA_REGEX = /window._sharedData\s*=\s*({.*});/
 
 
   FILENAME_REGEX = /([^"]*ProfilePageContainer.js[^"]+)/
