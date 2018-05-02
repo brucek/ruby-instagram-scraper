@@ -2,8 +2,8 @@
 # encoding: utf-8
 Gem::Specification.new do |s|
   s.name = 'ruby-instagram-scraper'
-  s.version = '0.2.2'
-  s.date = '2018-04-18'
+  s.version = '0.2.3'
+  s.date = '2018-05-01'
   s.summary = "A simple module for requests to Instagram without an API key."
   s.description = "A simple module for requests to Instagram without an API key."
   s.authors = ["Bruce Krysiak", "Sergey Borodanov  <s.borodanov@gmail.com>"]
@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "m", "~> 1.5.1"
   s.add_development_dependency "webmock", "~> 3.3.0"
   s.add_development_dependency "vcr", "~> 4.0.0"
+  s.add_development_dependency "byebug"
 end

@@ -4,7 +4,7 @@ require 'json'
 module RubyInstagramScraper
 
   BASE_URL = "https://www.instagram.com"
-  DATA_REGEX = /window._sharedData = ({.*);<\/script>/
+  DATA_REGEX = /window._sharedData=({.*});\s+window/
 
 
   FILENAME_REGEX = /([^"]*ProfilePageContainer.js[^"]+)/
@@ -23,7 +23,9 @@ module RubyInstagramScraper
     page = open_with_proxy(url, proxy).read
     match = DATA_REGEX.match(page)[1]
     json = JSON.parse(match)
-    json["entry_data"]["ProfilePage"][0]
+    res = json["entry_data"]["ProfilePage"]
+    res = res[0] if res.is_a?(Array)
+    res
   end
 
   def self.get_user_media_nodes (username, proxy = nil)

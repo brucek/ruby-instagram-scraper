@@ -4,8 +4,8 @@ require File.expand_path '../test_helper.rb', __FILE__
 describe RubyInstagramScraper do
 
   before do
-    @proxy_ip_addr = "159.65.110.167"
-    @proxy_port = "3128"
+    @proxy_ip_addr = "35.161.133.86"
+    @proxy_port = "8080"
   end
 
   describe "calls with a user" do
