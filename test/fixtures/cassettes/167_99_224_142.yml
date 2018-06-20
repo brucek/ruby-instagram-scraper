@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://ipv4.icanhazip.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 20 Jun 2018 01:46:12 GMT
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '15'
+      X-Security:
+      - This site DOES NOT distribute malware. Get the facts. https://goo.gl/1FhVpg
+      X-Rtfm:
+      - Learn about this site at http://bit.ly/icanhazip-faq and do not abuse the
+        service.
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      X-Cache:
+      - MISS from PROXYSERVER
+      X-Cache-Lookup:
+      - MISS from PROXYSERVER:53
+      Via:
+      - 1.1 PROXYSERVER (squid/3.3.8)
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '167.99.224.142
+
+'
+    http_version: 
+  recorded_at: Wed, 20 Jun 2018 01:46:12 GMT
+recorded_with: VCR 4.0.0

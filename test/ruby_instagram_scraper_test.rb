@@ -4,7 +4,7 @@ require File.expand_path '../test_helper.rb', __FILE__
 describe RubyInstagramScraper do
 
   before do
-    @proxy_ip_addr = "35.161.133.86"
+    @proxy_ip_addr = "167.99.224.142"
     @proxy_port = "8080"
   end
 
@@ -60,7 +60,7 @@ describe RubyInstagramScraper do
     describe 'when request query id' do
       it "must return the correct id" do
         VCR.use_cassette("#{@username}_queryid") do
-          RubyInstagramScraper.get_query_id(@username).must_equal "42323d64886122307be10013ad2dcc44"
+          RubyInstagramScraper.get_query_id(@username).must_equal "6305d415e36c0a5f0abb6daba312f2dd"
         end
       end
     end
